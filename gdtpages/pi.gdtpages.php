@@ -100,7 +100,7 @@
 				}
 				
 				
-				// Fetch the spacer parameter.
+				// Fetch the wrapper parameter.
 				if(ee()->TMPL->fetch_param('wrapper'))
 				{
 					$this->wrapper = explode('|',ee()->TMPL->fetch_param('wrapper'));
