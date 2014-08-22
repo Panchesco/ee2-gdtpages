@@ -48,7 +48,9 @@
 	    'pi_author'       => 'Richard Whitmer/Godat Design, Inc.',
 	    'pi_author_url'   => 'http://godatdesign.com/',
 	    'pi_description'  => '
-	    Get data about saved as part of the pages module.
+	     Uses the pages_uri field value from a channel entry to return formatted 
+		 title and custom field data for the entry using a single tag from anywhere
+		 in a template.
 	    ',
 	    'pi_usage'        => Gdtpages::usage()
 	);
@@ -260,18 +262,9 @@
 				
 					ob_start();  ?>
 					
-					
-					ABOUT:
-					----------------------------------------------------------------------------
-					Uses the pages_uri field value from a channel entry to return formatted 
-					title and custom field data for the entry using a single tag from anywhere
-					in a template.
-										
-					
 					TAGS:
 					----------------------------------------------------------------------------
 					{exp:gdtpages:title}
-					
 					
 					
 					REQUIRED PARAMETERS: 
